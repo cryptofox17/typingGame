@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- difficulty button  -->
+<div class="container my-3">
+<button id="settings-btn" class="settings-btn btn">
+    <i class="fa fa-cog" aria-hidden="true"></i>
+</button>
+
+<!-- difficulty settings options  -->
+
+<div id="settings" class="settings my-3">
+    <form id="settings-form">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <label for="difficulty" class="input-group-text">Difficulty</label>
+            </div>
+           
+            <select id="difficulty" class="custom-select">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+    </form>
+</div>
+
+<div class="main-box" id="main-box">
+    <h2 class="my-3">Speed Typer</h2>
+    <br>
+    <small>Type the following</small> 
+    <br>
+    <br>
+    <h1 id="word">
+
+    </h1>
+    <br>
+    <input type="text" id="text" autocomplete="off" placeholder="Type the word here..." class="form-control">
+
+    <p class="time-container">Time left: <span id="time">10s</span></p>
+    <p class="score-container">Score: <span id="score">0</span></p>
+
+    </div>
+
+</div>
+<div id="end-game-container" class="end-game-container"></div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
